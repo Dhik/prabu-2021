@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+.container_acara{
+    background: url("../views/img/live.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.container_body{
+    position: relative;
+    top: 20vh;
+    justify-content: center;
+    text-align: center;
+    margin: 0 100px;
+}
+.container_body .btn_chat{
+    background-color: #6C7358;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(108, 115, 88, 0.25);
+    font-weight: 600;
+    padding: 5px 20px;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+}
+.ratio{
+    position: relative;
+    z-index: 5;
+}
+.wrapper .bg_awan img{
+    width: 100%;
+    height: 70vh;
+}
+.container_title{
+    position: relative;
+    z-index: 10;
+}
+.container_footer{
+    position: relative;
+    z-index: 10;
+    top: 40vh;
+    text-align: center;
+    margin: 0 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(143, 143, 156, 0.3);
+}
+.container_footer .sponsor, .medpart{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.container_footer .img_sponsor, .img_medpart{
+    padding: 10px 0;
+}
+.container_footer .img_sponsor img, .img_medpart img{
+    padding: 10px 10px;
+}
+
+.slide-fade-enter-active {
+    transition: all .2s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  .rotate{
+    display: none;
+}
+
+/* Acara */
+.gambar-sponsor{
+    max-width: 200px;
+    max-height: 200px;
+ }
+ .video {
+   margin-right: 10px;
+ }
+ .chat {
+   margin-left: 10px;
+ }
+ .title-live-vid {
+   background-color: #7f5539;
+   padding: 10px;
+ }
+ .title_vid {
+   text-align: left;
+   padding: 0 10px;
+   color: white;
+ }
+ .small {
+   font-size: smaller;
+   color: white;
+   text-align: left;
+   padding: 10px;
+ }
+ .smallsosmed{
+   font-size: smaller;
+   color: white;
+   text-align: left;
+   padding: 2px 10px;
+ }
+ .avatar {
+   margin-top: 10px;
+ }
+ .drowdown {
+   cursor: pointer;
+ }
+@media screen and (orientation:portrait) {
+    body {
+        background: white !important;
+    }
+    /* .acara, .wrapper, .modal, .container_nav, .container, .container_body, .container_footer, .bg-modal , .contentBox {
+        display: none;
+    } */
+    .container_acara{
+        display: none;
+    }
+    .iklan-container{
+        display: none;
+    }
+    .bg-modal{
+        background-color: transparent;
+    }
+    
+    .rotate{
+        display: block;
+        animation: slide_up 1s ease;
+    }
+    @keyframes slide_up {
+        0%{
+            transform: translateY(800px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    .rotate h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 45vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .rotate p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -45vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 200;
+    }
+}

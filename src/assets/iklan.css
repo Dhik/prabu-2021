@@ -1,0 +1,154 @@
+.modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+    left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    z-index: 999;
+    position: fixed;
+}
+.contentBox{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);   
+    position: fixed; 
+
+}
+.contentBox .imgBx{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 10px;
+}
+.contentBox .imgBx::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #e7ffe0;
+    border-radius: 50%;
+}
+.contentBox .imgBx img{
+    position: relative;
+    max-width: 250px;
+    z-index: 10;
+}
+.contentBox .iklan{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentBox .iklan h3{
+    padding-top: 10vh;
+    color: #333;
+    line-height: 1em;
+    font-weight: 500;
+    font-size: 2em;
+}
+.contentBox .iklan h2{
+    font-size: 3em;
+    color: #ff4d54;
+    line-height: 1em;
+}
+.contentBox .iklan h2 span{
+    color: #333;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+.contentBox .iklan p{
+    font-weight: 300;
+}
+.contentBox .iklan a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4d54;
+    color: #fff;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 10vh ;
+
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/close.png");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+
+@media screen and (max-height: 500px) {
+    .contentBox{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    }
+    .contentBox .imgBx{
+        bottom: 50px
+    }
+    .contentBox .imgBx img{
+        width: 150px;
+        height: 250px;
+        left: 30px;
+        
+    }
+    .contentBox .imgBx::before{
+       display: none;
+    }
+    .contentBox .iklan{
+        bottom: 50px;
+        right: 30px;
+    }
+    .contentBox .iklan h3{
+        font-size: 1em;
+        padding-bottom: 10px;
+    }
+    .contentBox .iklan h2{
+        font-size: 3em;
+        color: #ff4d54;
+        line-height: 0.75em;
+    }
+    .contentBox .iklan h2 span{
+        font-size: 0.5em;
+    }
+    .contentBox .iklan p{
+        font-weight: 300;
+        font-size: 0.75em;
+    }
+    .contentBox .iklan a{
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-bottom: 10vh ;
+        font-size: 12px;
+    
+    }
+    .close{
+        right: 20px;
+        background: url("../assets/close.png");
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: center;
+    }
+}

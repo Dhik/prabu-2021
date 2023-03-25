@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+@font-face {
+  font-family: Brudge;
+  src: url('../assets/Font/Brudge Regular.otf') format('truetype');
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e1e9f4;
+}
+
+.centered {
+  position: absolute;
+  font-family: "Brudge";
+  color: #334f5d;
+  text-shadow: #acacac 0 5px;
+  font-size: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+img#head {
+  animation-name: head;
+  animation-duration: 2s;
+  animation-iteration-count: 1000;
+}
+
+@keyframes head {
+  0% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+img#fire {
+  animation-name: fire;
+  animation-duration: 2s;
+  animation-iteration-count: 1000;
+}
+
+@keyframes fire {
+  0% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+
+img#kasuari {
+  transform-origin: bottom;
+  animation-name: kasuari;
+  animation-duration: 2s;
+  animation-iteration-count: 1000;
+}
+
+@keyframes kasuari {
+  0% {
+    transform: translate(20px)
+  }
+
+  50% {
+    transform: translate(-20px)
+  }
+
+  100% {
+    transform: translate(20px)
+  }
+}
+
+img#ekor {
+  animation-name: ekor;
+  transform-origin: top;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1000;
+}
+
+@keyframes ekor {
+  0% {
+    transform: rotate(1.5deg);
+  }
+
+  50% {
+    transform: rotate(-1.5deg);
+  }
+
+  100% {
+    transform: rotate(1.5deg);
+  }
+}
+
+img#head_2 {
+  animation-name: head_2;
+  animation-duration: 0.3s;
+  animation-iteration-count: 10000;
+  transform-origin: bottom;
+}
+
+@keyframes head_2 {
+  0% {
+    transform: rotate(0.1deg);
+  }
+
+  50% {
+    transform: rotate(-0.1deg);
+  }
+
+  100% {
+    transform: rotate(0.1deg);
+  }
+}
+
+
+img#man_4 {
+  transform-origin: bottom right;
+  animation-name: people_4;
+  animation-duration: 1s;
+  animation-iteration-count: 1000;
+}
+
+@keyframes people_4 {
+  0% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+img#man_5 {
+  transform-origin: bottom;
+  animation-name: people_5;
+  animation-duration: 1s;
+  animation-iteration-count: 1000;
+}
+
+@keyframes people_5 {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+img#man_6 {
+  transform-origin: top;
+  animation-name: people_6;
+  animation-duration: 1s;
+  animation-iteration-count: 1000;
+}
+
+@keyframes people_6 {
+  0% {
+    transform: rotate(3deg);
+  }
+
+  50% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+img#cloud {
+  transform-origin: top;
+  animation-name: cloud;
+  animation-duration: 9s;
+  animation-iteration-count: 1000;
+}
+
+@keyframes cloud {
+  0% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+section img#kadal {
+  transform-origin: bottom;
+  animation-name: kadal;
+  animation-duration: 0.2s;
+  animation-iteration-count: 100000;
+}
+
+@keyframes kadal {
+  0% {
+    transform: rotate(0.1deg);
+  }
+
+  50% {
+    transform: rotate(-0.1deg);
+  }
+
+  100% {
+    transform: rotate(0.1deg);
+  }
+}
+
+img#cendra {
+  transform-origin: top;
+  animation-name: cendra;
+  animation-duration: 0.4s;
+  animation-iteration-count: 10000;
+}
+
+@keyframes cendra {
+  0% {
+    transform: rotate(0.1deg);
+  }
+
+  50% {
+    transform: rotate(-0.1deg);
+  }
+
+  100% {
+    transform: rotate(0.1deg);
+  }
+}
+
+
+img#plant {
+  transform-origin: bottom;
+  animation-name: plant;
+  animation-duration: 2s;
+  animation-iteration-count: 10000;
+}
+
+@keyframes plant {
+  0% {
+    transform: translate(5px)
+  }
+
+  50% {
+    transform: translate(-5px)
+  }
+
+  100% {
+    transform: translate(5px)
+  }
+}
+
+section img#plant_2 {
+  transform-origin: bottom;
+  animation-name: plant_2;
+  animation-duration: 2s;
+  animation-iteration-count: 10000;
+}
+
+@keyframes plant_2 {
+  0% {
+    transform: rotate(0.3deg);
+  }
+
+  50% {
+    transform: rotate(-0.3deg);
+  }
+
+  100% {
+    transform: rotate(0.3deg);
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    width: auto;
+    height: 100%;
+  }
+}
+img#move_1 {
+    transform-origin: center;
+    animation-name: move_1;
+    animation-duration: 1s;
+    animation-iteration-count: 10000;
+  }
+  
+  @keyframes move_1 {
+    0% {
+      transform: rotate(0.2deg);
+    }
+  
+    50% {
+      transform: rotate(-0.2deg);
+    }
+  
+    100% {
+      transform: rotate(0.2deg);
+    }
+  }
